@@ -1,0 +1,41 @@
+/* components/backtop/backtop.wxss */
+.backtop{
+  opacity: 0;
+  position: fixed;
+  right: 10rpx;
+  bottom: 10rpx;
+  border-radius:50%;
+  width: 100rpx;
+  height: 100rpx; 
+  transition: all 2s ease;
+  z-index: 99;
+}
+.backtop image{
+  width: 100%;
+  height: 100%
+}
+.block{
+  opacity: 1;
+  animation: vision 1s ease
+}
+.hide{
+  animation: hide 1s ease
+}
+@keyframes vision{
+  0%{
+    opacity: 0;
+    transform: translateX(150rpx)
+  }
+  100%{
+    opacity: 1
+  }
+}
+@keyframes hide{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(150rpx)
+  }
+}

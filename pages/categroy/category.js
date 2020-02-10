@@ -1,13 +1,24 @@
-// pages/about/about.js
+// pages/categroy/category.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    price:'26.33333',
+    couter:0
   },
-
+  addcouter(){
+    this.setData({
+      couter:this.data.couter + 1
+    })
+  },
+  gotodetail(){
+    console.log(123)
+    wx.navigateTo({
+      url: '/pages/detail/detail',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -21,7 +32,9 @@ Page({
   onReady: function () {
 
   },
-
+  onGotUserInfo(event){
+    console.log(event)
+  },
   /**
    * 生命周期函数--监听页面显示
    */

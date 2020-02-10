@@ -1,0 +1,4 @@
+<!--components/detail/recommend/Drecommend.wxml-->
+<view class="recommend">
+  <goodsitem goodsitem = "{{item}}"/>
+</view>

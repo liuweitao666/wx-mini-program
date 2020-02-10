@@ -1,7 +1,49 @@
 {
+  "usingComponents":{
+    "navbar":"/components/navtabbar/navbar"
+  },
   "pages": [
     "pages/home/home",
-    "pages/about/about"
+    "pages/categroy/category",
+    "pages/profile/profile",
+    "pages/cart/cart",
+    "pages/detail/detail"
   ],
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "购物街",
+    "backgroundColor": "#ff5777",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#ff5777",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "Home",
+      "iconPath": "assets/image/home.png",
+      "selectedIconPath": "assets/image/home_active.png"
+    },
+    {
+      "pagePath": "pages/categroy/category",
+      "text": "category",
+      "iconPath": "assets/image/category.png",
+      "selectedIconPath": "assets/image/category_active.png"
+    },
+    {
+      "pagePath": "pages/cart/cart",
+      "text": "About",
+      "iconPath": "assets/image/cart.png",
+      "selectedIconPath": "assets/image/cart_active.png"
+    },
+    {
+      "pagePath": "pages/profile/profile",
+      "text": "profile",
+      "iconPath": "assets/image/profile.png",
+      "selectedIconPath": "assets/image/profile_active.png"
+    }
+    ]
+  }
 }

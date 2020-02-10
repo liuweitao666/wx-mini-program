@@ -1,0 +1,29 @@
+/* pages/categroy/category.wxss */
+.scrollview{
+  background: #ff5777;
+  white-space: nowrap
+}
+.item{
+width: 200px;
+height: 100px;
+background: yellow;
+margin: 10px;
+display: inline-block
+}
+.switem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  color: white;
+  margin-top:15px
+}
+.red{
+  color: red
+}
+.green{
+  color: green
+}
+.yellow{
+  color: yellow
+}

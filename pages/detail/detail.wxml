@@ -1,0 +1,126 @@
+<!--pages/detail/detail.wxml-->
+<!-- <text>pages/detail/detail.wxml</text> -->
+<!-- 展示轮播图 -->
+<swiper class="swiper" indicator-dots autoplay="3000" indicator-active-color="#ff5777" indicator-color="#ffffff">
+  <swiper-item wx:for="{{topImage}}" wx:key="index">
+    <image src="{{item}}" mode="widthFix" />
+  </swiper-item>
+</swiper>
+<!-- 主体部分 -->
+<view class="Dmain">
+  <!-- 标题和价格部分 -->
+  <view class="itemprice">
+    <view>
+      <text>￥{{Dgoods.lowNowPrice}}</text>
+    </view>
+    <view class="lowNowPrice">
+      <view>￥{{Dgoods.highPrice}}</view>
+      <view style="background:{{Dgoods.discountBgColor}};" class="discount">{{Dgoods.discountDesc}}</view>
+    </view>
+  </view>
+  <view class="Dtitle">
+    <view>{{Dgoods.title}}</view>
+    <text style="color:#999;font-size:25rpx;">免运费</text>
+  </view>
+  <!-- 商家消息 -->
+  <view class="shopinfo_services">
+    <view class="services" wx:for="{{DShopInfo.services}}" wx:key="index" style="display:{{index>2 ? 'none':''}}">
+      <image src="{{item.icon}}" class="services_iamge" />
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <!-- 销量部分 -->
+  <block>
+    <view class="Ddliver">
+      <text wx:for="{{Dgoods.columns}}" wx:key="index" class="columns">{{item}}</text>
+    </view>
+  </block>
+  <!-- 评论区 -->
+  <block>
+     <d-comment rate="{{rate}}" />
+  </block>
+  <!-- 店家信息 -->
+  <block>
+    <view class="shopInfo">
+      <view class="shoplogo">
+        <view class="shoplogo_image">
+          <image src="{{DShopInfo.shopLogo}}" />
+        </view>
+        <text class="shopname">{{DShopInfo.name}}</text>
+      </view>
+      <view class="Cfans">
+        <text>粉丝数</text>
+        <view class="cGoods_padding">
+          {{DShopInfo.cFans}}
+        </view>
+      </view>
+      <view class="cSells">
+        <text>销量</text>
+        <view class="cGoods_padding">
+          {{DShopInfo.cSells}}
+        </view>
+      </view>
+      <view class="cGoods">
+        <text>商品数</text>
+        <block>
+          <view class="cGoods_padding">{{DShopInfo.cGoods}}</view>
+        </block>
+      </view>
+      <view class="score">
+        <block wx:for="{{DShopInfo.score}}" wx:key="index">
+          <view class="{{index>0?'cGoods_padding':''}}">
+            <text class="score-name">{{item.name}}</text>
+            <text class="{{item.isBetter?'Bagcolor':'green'}}">{{item.isBetter?'高':'低'}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+ 
+  <!-- nav导航 -->
+  <navbar title="{{title}}" id="dnav" activeback="activeback"  content="content" bind:itemclick="itemclick"/>
+  <!-- 图文详情 -->
+  <view class="detailimage">
+    <view class="Backg">
+      <i class="Bgdots Bgdots1"></i>
+    </view>
+    <view class="detaildesc">{{detailinfos.desc}}</view>
+    <view class="Backg">
+      <view class="Bgdots2"></view>
+      <i class="Bgdots" style="right:20rpx;"></i>
+    </view>
+    <text class="detailkey">{{detailinfos.key}}</text>
+    <!-- 详情图片展示区域 -->
+    <view wx:for="{{detailinfos.detailImage}}" wx:key="index" class="detailimg">
+      <image src="{{item}}" mode="widthFix" bindload="Dimgload" />
+    </view>
+  </view>
+  <!-- 商品参数区域 -->
+  <view class="itemPramas">
+    <view class="table">
+      <view class="tr">
+        <view class="td ">
+          {{itemParams.info.key}}
+        </view>
+      </view>
+      <block>
+        <view class="tr" wx:for="{{itemParams.info.set}}" wx:key="index">
+          <view class="td_color info_key">{{item.key}}</view>
+          <view class="td info_attr">{{item.value}}</view>
+        </view>
+      </block>
+      <block wx:for="{{itemParams.rule.tables[0]}}" wx:key="index">
+        <view class="tr">
+        <view class="{{index2===0?'td_color info_key':'td'}}" wx:for="{{item}}" wx:for-item="td" wx:for-index="index2" wx:key="index2">{{td}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <!-- 推荐商品界面 -->
+  <d-recommend item="{{goodsitem}}" id="recommend" />
+  <!-- 底部tabbar -->
+  <backtop top="{{scrolltop}}" bind:handlebacktop="handlebacktop" position="position"/>
+</view>
+
+<d-tabbar/>
+

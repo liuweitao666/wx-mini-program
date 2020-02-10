@@ -1,0 +1,17 @@
+<!--components/goods/goods.wxml-->
+<view class="goods" >
+ <block wx:for="{{goodsitem}}" wx:key="index" >
+     <view class="goodsitem" bindtap="navgodetail" data-iid="{{item.iid}}">
+        <image src="{{item.show.img}}" lazy-load mode="aspectFill">
+        </image>
+        <view class="goods-text">
+          {{item.title}}
+        </view>
+     </view>
+ </block>
+</view>
+
+    
+
+
+

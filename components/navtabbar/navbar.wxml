@@ -1,0 +1,11 @@
+<!--components/navtabbar/navbar.wxml-->
+<view class="box">
+     <view class="content" 
+           wx:for="{{title}}" 
+           bindtap="changeclass" 
+           data-index="{{index}}"
+           wx:key="index">
+           <text class="{{index===currentindex ? 'activeback' :''}}">{{item}}</text>
+     </view>
+     <!-- <view>{{title[0]}}</view> -->
+</view>

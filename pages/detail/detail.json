@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "backtop": "/components/backtop/backtop",
+    "d-tabbar": "/components/detail/tabbar/Dtabbar",
+    "d-recommend": "/components/detail/recommend/Drecommend",
+    "d-comment": "/components/detail/comment/w-d-comment"
+  },
+  "navigationBarTitleText": "Detail"
+}

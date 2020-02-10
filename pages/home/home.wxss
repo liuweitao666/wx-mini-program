@@ -1,1 +1,71 @@
 /* pages/home/home.wxss */
+.content {
+  flex: 1;
+  line-height: 75rpx;
+  font-size: 32rpx;
+  color: #999;
+}
+
+.activeback {
+  color: #ff5777;
+  line-height: 75rpx;
+  display: inline-block;
+  padding: 0 10rpx;
+  border-bottom: 2px solid #ff5777;
+}
+.swiper{
+  height: 450rpx
+}
+.swp-img{
+  width: 100%;
+  
+}
+.recommend{
+  display: flex;
+  text-align: center;
+  color: #999;
+}
+.recommend-item{
+  flex: 1;
+  box-sizing: border-box;
+  padding: 10rpx;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  margin-bottom:10rpx; 
+}
+.recommend-item image{
+  width: 100%;
+  height: 167.6rpx;
+}
+/* .goods{
+  padding-top: 15rpx;
+  flex-wrap: nowrap;
+  display: flex
+
+} */
+.loading{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  background: #ffffff;
+  font-size: 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+.loadingview{
+height: 33rpx;
+padding-right: 10rpx;
+}
+.fixed{
+  position: fixed;
+  top:0;
+  width:100%;
+  background: #ffffff
+}
+.isdhownav{
+  display: none
+}
+

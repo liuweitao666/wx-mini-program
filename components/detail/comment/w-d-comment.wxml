@@ -1,0 +1,18 @@
+<!--components/detail/comment/w-d-comment.wxml-->
+<!-- 用户评论 -->
+<view class="comment">
+  <view class="d-com-title">
+    <text>卖家评价</text>
+    <text>></text>
+  </view>
+  <view class="d-com-content" wx:for="{{rate}}" wx:key="index">
+    <view class="d-com-uname">
+      <view class="d-com-image">
+        <image src="{{item.user.avatar}}" />
+      </view>
+      <text>{{item.user.uname}}</text>
+    </view>
+    <view class=".d-comment-content">{{item.content}}</view>
+    <view>{{item.created}}</view>
+  </view>
+</view>

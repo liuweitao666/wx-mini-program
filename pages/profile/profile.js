@@ -1,4 +1,4 @@
-// pages/logs/logs.js
+// pages/profile/profile.js
 Page({
 
   /**

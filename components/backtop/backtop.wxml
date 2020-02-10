@@ -1,0 +1,6 @@
+<!--components/backtop/backtop.wxml-->
+<!-- <text>components/backtop/backtop.wxml</text> -->
+
+<view bindtap="backtop" class="backtop,position,{{top>1000 ? 'block':'hide'}}" >
+    <image src="/assets/image/common/top.png"></image>
+</view>

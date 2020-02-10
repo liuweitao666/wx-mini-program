@@ -1,5 +1,46 @@
 <!--pages/home/home.wxml-->
-<view>
-    <text>hello world</text>
+<!-- 首页轮播图 -->
+<swiper class="swiper" 
+        indicator-dots autoplay 
+        interval="4000" 
+        indicator-color="#ffffff" 
+        indicator-active-color="#ff5777">
+    <swiper-item wx:for="{{bannerlist}}" wx:key="id">
+             <image src="{{item.image}}" 
+             class="swp-img" bindload="imageload"/>
+    </swiper-item>  
+</swiper>
+<!-- 热门排行 -->
+<view class="recommend">
+    <block wx:for="{{recommendlist}}" wx:key="index">
+      <view class="recommend-item">
+        <image src="{{item.image}}"/>
+        <text>{{item.title}}</text>
+      </view>  
+    </block>
 </view>
-<button size='mini' type='primary'>按钮</button>
+<!-- nav导航 -->
+<view class="fixed,{{top.scrollTop>= navscrolltop?'':'isdhownav'}}" >
+<navbar title="{{['流行','时尚','精选']}}" 
+        activeback="activeback" 
+        content="content" bind:itemclick="handleTabclick"
+        class="fixednav"/>
+</view>
+
+<navbar title="{{['流行','时尚','精选']}}" 
+        activeback="activeback" 
+        content="content" bind:itemclick="handleTabclick"
+        class="navcontrol"/>
+<!-- 展示商品列表 -->
+<view class="goods">
+<goods goodsitem="{{goods[type].list}}" bind:gotodetail="gotodetail" /> 
+</view>
+<!-- 返回顶部 -->
+<backtop bind:handlebacktop="backtop" top='{{top.scrollTop}}' />
+<!-- 上拉加载动画 -->
+<view class="loading" wx:if="{{isload}}">
+  <view class="loadingview">
+   <icon type="waiting" size="15"></icon>
+  </view>
+  <text>正在加载···</text>
+</view>

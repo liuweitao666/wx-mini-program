@@ -1,0 +1,43 @@
+/* components/detail/tabbar/Dtabbar.wxss */
+.detail_bar{
+  display: flex;
+  height: 86rpx;
+  width: 100%;
+  background: #ffffff;
+  position: fixed;
+  bottom: 0;
+  font-size: 26rpx
+}
+.add_buy{
+  width: 172rpx;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  line-height: 86rpx
+}
+.Nowbuy{
+  background: #ff5577;
+  color: #ffffff;
+}
+.cart{
+  background: #ffe6eb;
+  color:#ff5577
+}
+.warpper{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.warpper_active{
+  color: #ff5577
+}
+.Service{
+  border-left:1px solid #e5e5e5;
+  border-right:1px solid #e5e5e5; 
+}
+.tabbar_image{
+  width: 40rpx;
+  height: 40rpx;
+  margin:0 auto 0rpx; 
+}

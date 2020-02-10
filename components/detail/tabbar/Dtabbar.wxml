@@ -1,0 +1,29 @@
+<!--components/detail/tabbar/Dtabbar.wxml-->
+  <view class="detail_bar">
+    <view class="warpper">
+      <view>
+        <view class="tabbar_image">
+          <image src="/assets/image/detail/shop.png" />
+        </view>
+        <text>店铺</text>
+      </view>
+    </view>
+    <view class="warpper Service">
+      <view>
+        <view class="tabbar_image">
+          <image src="/assets/image/detail/service.png" />
+        </view>
+        <text>客服</text>
+      </view>
+    </view>
+    <view class="warpper">
+      <view>
+        <view class="tabbar_image">
+          <image src="/assets/image/detail/collect.png" />
+        </view>
+        <text>收藏</text>
+      </view>
+    </view>
+    <view class="add_buy cart">加入购物车</view>
+    <view class="add_buy Nowbuy">立即购买</view>
+  </view>

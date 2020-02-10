@@ -1,0 +1,7 @@
+function numberformat(number) {
+  var newnumber = parseFloat(number)
+  return newnumber.toFixed(2)
+}
+module.exports ={
+  numberformat: numberformat
+}

@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "goods":"/components/goods/goods",
+    "backtop":"/components/backtop/backtop"
+  }
 }

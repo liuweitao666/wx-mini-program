@@ -1,0 +1,20 @@
+<!--pages/categroy/category.wxml-->
+<text>商品分类</text>
+<scroll-view class='scrollview' scroll-x>
+    <view wx:for="{{100}}" class='item' wx:key="idnex"></view>
+</scroll-view>
+
+<swiper>
+    <swiper-item class="switem">1</swiper-item>
+    <swiper-item class="switem">2</swiper-item>
+    <swiper-item class="switem">3</swiper-item>
+</swiper>
+
+<button open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">选择</button>
+<wxs src="../../wxs/formatnumber/formatnumber.wxs" module='info'/>
+
+<button bindtap="gotodetail">返回首页</button>  
+
+<view>{{info.numberformat(price)}}</view>
+<view>{{couter}}</view>
+

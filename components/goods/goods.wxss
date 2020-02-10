@@ -1,0 +1,26 @@
+/* components/goods/goods.wxss */
+.goodsitem{
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 15rpx;
+  padding-bottom: 15rpx;
+  border-radius: 8rpx;
+}
+.goodsitem image{
+  width: 100%;
+  height: 480rpx;
+  border-radius: 8rpx;
+}
+.goodsitem .goods-text{
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 30rpx;
+}
+.goods{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+  padding-right: 15rpx;
+}

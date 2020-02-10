@@ -1,0 +1,217 @@
+/* pages/detail/detail.wxss */
+.swiper{
+  height: 700rpx;
+}
+image{
+  height: 100%;
+  width: 100%;
+}
+.Dmain{
+  margin-bottom: 86rpx;
+}
+.Dtitle{
+  display: inline-block;
+  font-size: 32rpx;
+  padding: 5rpx 20rpx;
+  color: #999;
+}
+.Ddliver{
+  display: flex;
+  border-top: 20rpx solid #e5e5e5;
+  border-bottom: 20rpx solid #e5e5e5;
+  padding: 20rpx 0;
+}
+.columns{
+  flex: 1;
+  text-align: center;
+  font-size: 25rpx; 
+}
+.itemprice{
+  padding: 20rpx;
+  font-size: 50rpx; 
+  font-weight: 500;
+  display: flex
+}
+.lowNowPrice{
+  padding-left:20rpx;
+  font-size: 25rpx;
+  color: #999;
+}
+.discount{
+margin-top: 10rpx;
+border-radius: 8rpx;
+font-size: 25rpx;
+color: #f8f8f8;
+padding: 0 5rpx;
+text-align: center
+}
+.shopinfo_services{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  font-size: 25rpx;
+  border-top: 20rpx solid #e5e5e5;
+}
+.services_iamge{
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 10rpx; 
+}
+.shopinfo_services text{
+  display: inline-block;
+  position: relative;
+  top: -4.5rpx;
+}
+.shopInfo{
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 20rpx;
+  font-size: 25rpx;
+  align-items: center;
+  text-align: center;
+  line-height: 30rpx;
+}
+.shoplogo{
+  width: 200rpx;
+  text-align: center;
+  line-height: 35rpx;
+}
+.shoplogo_image{
+  width: 150rpx;
+  height: 150rpx;
+  border: solid 1px #e5e5e5;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden
+}
+.cGoods_padding{
+  padding-top: 20rpx;
+}
+.shopname{
+  line-height: 45rpx;
+}
+.score{
+  text-align: left
+}
+.score-name{
+  width: 160rpx;
+  padding-right: 20rpx;
+}
+.Bagcolor{
+  width: 50rpx;
+  background: #f13e3a;
+  padding: 4rpx;
+  color: #ffffff;
+  border-radius: 8rpx;
+  text-align: center
+}
+.cSells{
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  padding: 0 15rpx; 
+}
+.green{
+  width: 50rpx;
+  background: greenyellow;
+  color: #ffffff;
+  padding: 4rpx;
+  border-radius: 8rpx;
+  text-align: center
+}
+.content{
+  flex: 1;
+  padding: 20rpx;
+  border-top: 20rpx solid #e5e5e5;
+  font-size: 26rpx;
+}
+.activeback{
+  color: #ff5577;
+  border-bottom: solid 2px #ff5577;
+  padding: 5rpx 10rpx;
+}
+.detailimage{
+  font-size: 26rpx;
+  line-height: 45rpx;
+  margin-top: 15rpx;
+}
+.detailimg{
+  width: 100%;
+}
+.detaildesc{
+  padding:0 20rpx
+}
+.detailkey{
+  padding: 20rpx;
+  font-size: 28rpx;
+  display: block
+}
+.Backg{
+  padding: 20rpx;
+  position: relative
+}
+.Bgdots{
+  display: inline-block;
+  width: 10rpx;
+  height: 10rpx;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+}
+.Bgdots1::after{
+  display: inline-block;
+  content: '';
+  border-top:1px solid #999;
+  width: 300rpx; 
+  height: 2rpx;
+  position: relative;
+  left: 10rpx;
+  top: -24rpx;
+}
+.Bgdots2{
+  display: inline-block;
+  content: '';
+  border-top:1px solid #999;
+  width: 300rpx; 
+  height: 2rpx;
+  position: absolute;
+  right: 30rpx;
+  bottom: 13rpx;
+}
+.itemPramas{
+  padding: 10rpx 20rpx;
+}
+.table{
+  display: flex;
+  flex-direction: column;
+  border-top:1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  font-size: 26rpx;
+}
+.tr{
+  line-height: 55rpx;
+  text-align: center;
+  display: flex
+}
+.td{
+  flex: 1;
+  border-right:1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.td_color{
+  color: #ff5577
+}
+.info_key{
+  width: 120rpx;
+  border-right:1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.info_attr{
+  text-align: left;
+  padding-left: 40rpx;
+}
+
+/* backtop */
+.position{
+  bottom:90rpx !important;
+}
